@@ -7,7 +7,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "postcss": "^8.4.16",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
@@ -25,7 +28,7 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "publishConfig":{
+  "publishConfig": {
     "registry": "https://npm.pkg.github.com/yusufjon1997"
   }
 }
