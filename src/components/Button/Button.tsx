@@ -1,13 +1,12 @@
 import React from 'react';
-import './Button.css';
+// import './Button.css';
 
 interface ButtonProps {
     label : string
 }
 
 const Button = (props : ButtonProps) => {
-    console.log('this is button')
-    return <button>{props.label}</button>
+    return <button style={{ background : 'red'}}>{props.label}</button>
 }
 
 export default Button ; 

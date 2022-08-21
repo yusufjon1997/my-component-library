@@ -21,15 +21,18 @@ export default [
             }
         ], 
         plugins : [
+            postcss({
+                plugins : [],
+                minimize : true
+            }),
             resolve(),
             commonjs(),
             typescript({tsconfig : "./tsconfig.json"}),
-            postcss(),
         ]
     }, {
+        extarnal : [/\.(css|less|scss)$/],
         input : "dist/esm/index.d.ts",
         output : [{ file : "dist/index.d.ts" , format : "esm"}],
         plugins : [dts()],
-        extarnal : [/\.css$/]
     }
 ]
